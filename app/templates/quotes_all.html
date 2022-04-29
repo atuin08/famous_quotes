@@ -1,0 +1,12 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}
+    Cytaty na dziś
+{% endblock %}
+
+{% block content %}
+<ul class="nav navbar-nav">
+    {% for quote in all_quotes %}
+    <li><a href="/">{{ quote }}</a></li>
+    {% endfor %}
+ </ul>
+{% endblock %}
